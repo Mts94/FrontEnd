@@ -1,0 +1,24 @@
+*{
+  padding: 0%;
+  margin: auto;
+  text-align: center;
+}
+
+.projects{
+  margin: 20px;
+}
+
+img
+{
+  width: 400px;
+  height: 200px;
+   box-shadow: 5px 5px 5px grey;
+}
+ a{
+  text-decoration: none;
+  color: #fff;
+ }
+
+ button{
+  padding: 0.5%;
+ }

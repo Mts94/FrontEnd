@@ -1,0 +1,38 @@
+span{
+  font-size: x-small;
+  font-style: bold;
+  color: #ffffff;
+  flex: auto;
+
+}
+
+.navbar{
+  color: #ffffff;
+  
+
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #ffffff;
+}
+.bi {
+
+  color: #ffffff;
+  font-size: 1.7em;
+}
+.logoAP {
+  width: 6.5em;
+  color: #fff;
+}
+.link_contacto {
+  text-decoration: none;
+  color: #ffffff;
+}
+.btn-success{
+  margin: 5px;
+}
+
+.navbar-collapse{
+flex-grow: 0;
+}
+

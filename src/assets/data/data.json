@@ -1,0 +1,41 @@
+{
+	"nombre": "Matias",
+	"apellido": "Arias",
+	"image": "../assets/img/foto.png",
+	"position": "Mi nombre es Matías Arias, soy desarrollador web FullStack Jr",
+	
+	"escuela": {
+		"name": "Esc. Tecnica n° 3 Dr.Juan B. Teran",
+		"img": "../../../assets/img/tec3.png",
+		"url": "https://tecnica3jbt.edu.ar/"
+	},
+	"escuela2": {
+		"name": "Escuela secundaria Gral. Manuel Belgrano"
+
+
+	},
+	"experiencia": {
+		"puesto": "Personal de facturacion",
+		"ingreso": "13/11/2015"
+	},
+
+	"skills": ["HTML", "CSS", "JavaSvript", "Git", "Bootstrap", "Angular"],
+
+	"proyectos": [{
+		"nombre": "Primer Portfolio web",
+
+		"description": "Primer porfolio web estatico creado con HTML,Css y Bootstrap",
+		"url": "https://mtsarias.000webhostapp.com/"
+	},
+	 {
+		"nombre": "Practicas lenguaje JavaScript",
+		"description": "Practicas realizadas con javascript,a partir de videos, libros etc",
+		"url": "https://github.com/Mts94/practicajs"
+	},
+	{
+		"nombre": "Practicas realizadas con agular",
+		"description": "Practicas realizadas con agular en proceso",
+		"url": "https://github.com/Mts94/aprendiendo-angular"
+  }]
+  }
+
