@@ -1,20 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { EducacionComponent } from './componentes/educacion/educacion.component';
-import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
-import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
-import { HeaderComponent } from './componentes/header/header.component';
-import { NotFoundComponent } from './componentes/not-found/not-found.component';
-import { ContactoComponent } from './componentes/contacto/contacto.component';
+import { HomeComponent } from './componentes/home/home.component';
+import { LoginComponent} from './componentes/login/login.component';
+
 
 const routes: Routes = [
-  {path: '', redirectTo:'/header', pathMatch: 'full' },
-  {path: '/header', component: HeaderComponent },
-  {path: '/acerca-de', component: AcercaDeComponent },
-  {path: '/educacion', component: EducacionComponent },
-  {path: '/proyectos', component: ProyectosComponent },
-  {path: '/contacto', component: ContactoComponent},
-  {path: '**', component: NotFoundComponent}
+{path: '', component: HomeComponent},
+{path: 'login', component: LoginComponent}
 ];
 
 @NgModule({

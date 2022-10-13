@@ -17,6 +17,8 @@ import { NotFoundComponent } from './componentes/not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { HomeComponent } from './componentes/home/home.component';
+import { LoginComponent } from './componentes/login/login.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     ContactoComponent,
     NotFoundComponent,
     FooterComponent,
+    HomeComponent,
+    LoginComponent
     
   ],
   imports: [
