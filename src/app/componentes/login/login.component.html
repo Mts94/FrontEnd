@@ -1,42 +1,21 @@
-<div class="login_form_wrapper">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <!-- login_wrapper -->
-        <div class="login_wrapper">
-          <div class="row justify-content-center align-items-center">
-            <h1>Iniciar Sesion</h1>
-            <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
 
-              <div class="formsix-pos">
-                <div class="form-group i-email">
-                  <input type="email" class="form-control" id="nombreUsuario" name="nombreUsuario"
-                     [(ngModel)]="nombreUsuario" required />
-                  <label class="form-label" for="nombreUsuario">Usuario</label>
-                </div>
-              </div>
-              <div class="formsix-e">
-                <div class="form-group i-password">
-                  <input type="password" class="form-control" required id="password" placeholder="Password" [(ngModel)]="password" required [ngModelOptions]="{standalone: true}"/>
-                  <label for="password" class="form-label">Password</label>
-                </div>
-              </div>
-            <!--  <div class="login_remember_box">
-              <label class="control control--checkbox">Remember me
-                  <input type="checkbox">
-                  <span class="control__indicator"></span>
-                </label>
-
-              </div>-->
-              <div class="login_btn_wrapper">
-                <a href="#" class="btn btn-primary login_btn"> Login </a>
-              </div>
+    <!-- Icon -->
 
 
-          </form>
+    <!-- Login Form -->
+    <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+      <input type="text" id="nombreUsuario" class="fadeIn second" name="nombreUsuario" placeholder="Usuario" [(ngModel)]="nombreUsuario" required >
+      <input type="password" id="password" class="fadeIn second" name="password" placeholder="password" [(ngModel)]="password" required >
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
 
-          <!-- /.login_wrapper-->
-        </div>
-      </div>
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
     </div>
+
   </div>
+</div>
