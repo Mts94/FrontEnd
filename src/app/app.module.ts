@@ -20,6 +20,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HomeComponent } from './componentes/home/home.component';
 import LoginComponent from './componentes/login/login.component';
 import { FormsModule } from '@angular/forms';
+import { interceptorProvider } from './services/interceptor-service';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,9 @@ import { FormsModule } from '@angular/forms';
     }),
     FormsModule
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

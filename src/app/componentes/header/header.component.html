@@ -27,7 +27,8 @@
       <form class="d-flex">
         <button class="btn btn-outline-warning"><a class="link_contacto"
           href="index.html#contactame">Contactame</a></button>
-         <button class="btn btn-success" (click)="login()">Login</button>
+         <button class="btn btn-success" (click)="login()" *ngIf="!isLogged">Login</button>
+         <button class="btn btn-success" (click)="onLogOut()" *ngIf="isLogged">Cerrar sesion</button>
       </form>
     </div>
   </div>
