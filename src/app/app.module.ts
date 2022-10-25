@@ -10,7 +10,6 @@ import { ExperienciaComponent } from './componentes/experiencia/experiencia.comp
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { SkillsComponent } from './componentes/skills/skills.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { NotFoundComponent } from './componentes/not-found/not-found.component';
@@ -21,6 +20,7 @@ import { HomeComponent } from './componentes/home/home.component';
 import LoginComponent from './componentes/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { interceptorProvider } from './services/interceptor-service';
+import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia/new-experiencia.component';
 
 @NgModule({
   declarations: [
@@ -36,14 +36,15 @@ import { interceptorProvider } from './services/interceptor-service';
     NotFoundComponent,
     FooterComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    NewExperienciaComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatProgressSpinnerModule,
+
     AppRoutingModule,
     HttpClientModule,
     NgCircleProgressModule.forRoot({
