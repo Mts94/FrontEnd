@@ -20,7 +20,7 @@ descripcionE: string ='';
     const expe = new Experiencia(this.nombreE, this.descripcionE);
     this.sExperiencia.save(expe).subscribe(data=>{
         
-      alert("Experiecia a&ntilde;adida");
+      alert("Experiecia añadida");
       this.router.navigate(['']);
     }),() =>{
       alert("Falló");
