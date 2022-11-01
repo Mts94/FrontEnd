@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
@@ -17,11 +16,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HomeComponent } from './componentes/home/home.component';
-import LoginComponent from './componentes/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { interceptorProvider } from './services/interceptor-service';
-import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia/new-experiencia.component';
+
 import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia/edit-experiencia.component';
+import LoginComponent from './componentes/login/login.component';
+import { NewExperienciaComponent } from "./componentes/experiencia/NewExperienciaComponent";
 
 @NgModule({
   declarations: [
@@ -52,7 +52,7 @@ import { EditExperienciaComponent } from './componentes/experiencia/edit-experie
     NgCircleProgressModule.forRoot({
 
     }),
-    FormsModule
+   FormsModule
   ],
   providers: [
     interceptorProvider

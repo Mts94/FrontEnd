@@ -7,8 +7,10 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class SExperienciaService {
-expURL = 'http://localhost:8080/explab'
-  constructor( private httpClient : HttpClient) { }
+expURL = 'http://localhost:8080/explab/'
+
+
+constructor( private httpClient : HttpClient) { }
 
   public lista(): Observable<Experiencia[]>{
     return this.httpClient.get<Experiencia[]>(this.expURL + 'lista');
@@ -23,11 +25,11 @@ expURL = 'http://localhost:8080/explab'
   }
 
   public update(id: number, experiencia: Experiencia): Observable<any>{
-    return this.httpClient.put<any>(this.expURL + `update(${id})`, experiencia);
+    return this.httpClient.put<any>(this.expURL + `update/${id}`, experiencia);
   }
 
   public delete(id: number): Observable<any>{
-    return this.httpClient.delete<any>(this.expURL + `detele/${id}`);
+    return this.httpClient.delete<any>(this.expURL + `delete/${id}`);
 
   }
 

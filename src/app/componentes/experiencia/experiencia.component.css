@@ -10,10 +10,10 @@
 .description{
   padding-top: 10%;
 }
-button{
+button i{
   color: #ffffff;
 }
 
-i{
-  color: #000;
+.nueva{
+  color:rgb(47, 38, 80);
 }
