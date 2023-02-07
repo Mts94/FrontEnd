@@ -1,4 +1,9 @@
 
+.row{
+  margin: auto;
+  text-align: center;
+}
+
 
 img{
   padding: 0px;
@@ -10,7 +15,11 @@ img{
  div{
   text-align: center;
  }
-
- .nameis{
-  font-weight: bold;
+ .descripcion{
+  padding: 10px;
+  margin: 50px;
  }
+ .nameis{
+  margin: auto;
+ }
+ 

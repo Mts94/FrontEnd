@@ -1,23 +1,34 @@
-<br><br>
-<h3>Educación</h3>
 
-  <div class="row">
-<div>
-  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 logoEsc">
-    <img  src="../../../assets/img/tec3.png" class="img-fluid"  alt="Tecnica3">
-</div>
-  <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-    <h6>Ciclo basico:</h6>
-    <p>Cursados en Esc. Tecnica n° 3 "Dr.Juan B. Teran"(2007-2009).</p>
-    <p>
-      <a href="https://tecnica3jbt.edu.ar/" target="_blank">Página web</a>
-    </p>
-    <br><br>
-    <h6>Ciclo superior:</h6>
-    <p>Cursados en Esc. Secundaria Gral. Manuel Belgrano (2010-2012).
-      Titulo obtenido: "Bachiller en comunicación, artes y dise&ntilde;o".</p>
-
-  </div>
-</div>
+<div class="row">
+  <h1>Educación</h1>
+  <br><br>
+  <div class="col-lg-2  col-md-2 col-sm-2">
+      <button type="button"  class="btn btn-info nueva" routerLink="/nuevaedu" *ngIf="isLogged">
+    Nueva educación <i class="bi bi-plus-circle"></i>
+      </button>
   </div>
 
+  <div class="col lg 1 col-md-1 col-sm-1"></div>
+  <div class=" col-lg-11 col-md-11 col-sm-11">
+      <table class="table">
+          <tbody>
+              <tr *ngFor="let Educacion of educacion">
+                  <td>
+                      <h4>{{Educacion.nombreE}}</h4>
+                  </td>
+                  <td><h5>{{Educacion.descripcionE}}</h5></td>
+                  <td *ngIf="isLogged">
+                      <button class="btn btn-primary" routerLink="/editedu/{{Educacion.id}}">
+                          <i class="bi bi-pencil-square"></i></button>
+                  </td>
+                  <td *ngIf="isLogged">
+                    
+                      <button type="button" class="btn btn-danger" (click)="delete(Educacion.id)" >
+                        <i class="bi bi-trash"></i></button>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+
+</div>

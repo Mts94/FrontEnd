@@ -1,19 +1,20 @@
+
 .row{
   padding: 20px;
   text-align: center;
 }
-.logoEsc{
-padding: 5px;
-margin: 0px auto;
+
+.logoLibertad{
+  margin: 0px auto;
 }
 
-img, svg {
-  height: fit-content;
-  vertical-align: super;
-
+.description{
+  padding-top: 10%;
+}
+button i{
+  color: #ffffff;
 }
 
-div{
-  display: inline-block;
-
- }
+.nueva{
+  color:rgb(47, 38, 80);
+}
